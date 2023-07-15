@@ -91,6 +91,21 @@ form textarea {
     overflow: auto;
     max-height: 650px;
     border-bottom: 1px solid gray;
+    scroll-behavior: smooth;
+}
+
+.post-list::-webkit-scrollbar {
+    width: 10px;
+}
+
+.post-list::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+    border: none;
+}
+
+.post-list::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 
 .post-layout {
