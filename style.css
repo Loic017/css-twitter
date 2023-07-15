@@ -1,0 +1,135 @@
+/*
+# CSS Preset
+## version 1.0.0
+A simple CSS preset to enable box-sizing, set some text rendering options to decrease the differences between browsers, and set a couple of nice defaults.
+## Usage
+    <link href=preset.css rel=stylesheet>
+## Info
+- author: Tommy Hodgins
+- license: MIT
+- website: https://github.com/tomhodgins/preset
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Syne&display=swap");
+
+* {
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-kerning: auto;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+}
+
+:root {
+    --dark: #010001;
+    --light: #e7e8eb;
+    --noti: #1d9af1;
+}
+
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: var(--dark);
+    font-family: "Syne", sans-serif;
+}
+
+.link-tag {
+    color: #fff;
+    text-decoration: none;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.link {
+    font-size: 20px;
+}
+
+.logo {
+    filter: invert(100%);
+    width: 30px;
+}
+
+.links-left {
+    margin-left: 240px;
+    margin-top: 20px;
+    float: left;
+}
+
+.tweet-btn {
+    background-color: var(--noti);
+    border-radius: 90px;
+    padding: 16px 90px;
+    font-weight: bold;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+/* Profile Bottom  */
+
+.card {
+    color: #fff;
+    /* width: 40%; */
+    display: grid;
+    grid-template-columns: 52px 120px 120px 0px;
+    grid-template-areas:
+        "pfp name dots"
+        "pfp user dots";
+    bottom: 0;
+    position: absolute;
+    margin-left: 240px;
+    margin-bottom: 25px;
+}
+
+.pfp {
+    max-width: 40px;
+    border-radius: 100%;
+    grid-area: pfp;
+}
+
+.user {
+    grid-area: name;
+}
+.username {
+    grid-area: user;
+    font-size: 15px;
+    color: #8e8e8e;
+}
+
+.dots {
+    grid-area: dots;
+    font-size: 25px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.link-img {
+    filter: invert(100%);
+    max-width: 25px;
+    margin-right: 1em;
+}
+
+#homeflex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.together {
+    display: flex;
+}

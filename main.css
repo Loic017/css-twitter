@@ -1,0 +1,115 @@
+:root {
+    --dark: #010001;
+    --light: #e7e8eb;
+    --noti: #1d9af1;
+}
+
+.top h1 {
+    padding-top: 20px;
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.main-container {
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    margin-left: 35px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.for-you-following {
+    text-align: center;
+    display: flex;
+    gap: 10em;
+    margin-top: 20px;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 140px;
+    width: 100%;
+    border-bottom: 1px solid gray;
+}
+
+.for-you-btn {
+    border-bottom: 4px solid var(--dark);
+    border-radius: 5%;
+    padding-bottom: 3px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.following-btn {
+    border-bottom: 4px solid var(--dark);
+    border-radius: 5%;
+    padding-bottom: 3px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.for-you-following a:hover {
+    border-bottom: 4px solid var(--noti);
+}
+
+.clicked {
+    border-bottom: 4px solid var(--noti);
+    border-radius: 5%;
+    padding-bottom: 3px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.post-section {
+    text-align: center;
+    display: flex;
+    gap: 10em;
+    margin-top: 20px;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 140px;
+    width: 100%;
+    border-bottom: 1px solid gray;
+}
+
+form textarea {
+    border: 1px solid gray;
+    background: none;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+    width: max-content;
+    height: min-content;
+    padding: 10px;
+}
+
+.post-layout {
+    display: flex;
+    /* grid-template-columns: 52px 120px 120px;
+    grid-template-areas:
+        "pfp2 input input"
+        "media media tweet"; */
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.pfp-post {
+    /* grid-area: pfp2; */
+    max-width: 40px;
+    border-radius: 100%;
+}
+
+.tweet-btn-small {
+    background-color: var(--noti);
+    border-radius: 90px;
+    padding: 8px 20px;
+    font-weight: bold;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    margin-top: 10px;
+}
